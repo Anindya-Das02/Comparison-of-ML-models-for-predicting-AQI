@@ -11,6 +11,11 @@ In this project we are using regression models such as:
 * Random Forest Regression
 * Support Vector regression (SVR)
 
+
+
+### AQI table ###
+![AQI table](https://w.ndtvimg.com/sites/3/2019/12/18122322/air_quality_index_standards_CPCB_650.jpg)
+
 ### Result ###
 Models | R^2 | RMSE | MAE | RMSLE
 -------|-----|------|-----|------
