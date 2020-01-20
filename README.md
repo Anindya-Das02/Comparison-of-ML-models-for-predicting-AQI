@@ -12,6 +12,7 @@ In this project we are using regression models such as:
 * Support Vector regression (SVR)
 
 __Libraries Used__: numpy, pandas, sklearn
+__IDE used__: spyder (Anaconda 3)
 
 ### Error Metrics Used ###
 In this project we have used the following error metrics to evaluate and compare our models:
