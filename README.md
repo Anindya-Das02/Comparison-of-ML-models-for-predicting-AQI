@@ -11,7 +11,7 @@ In this project we are using regression models such as:
 * Random Forest Regression
 * Support Vector regression (SVR)
 
-__Libraries Used__: numpy, pandas, sklearn
+__Libraries Used__: numpy, pandas, sklearn <br/>
 __IDE used__: spyder (Anaconda 3)
 
 ### Error Metrics Used ###
