@@ -49,5 +49,10 @@ Random Forest |0.9982| 3.8577 | 1.7016 | 0.0422
 SVR | 0.9164 | 27.0025 | 19.0722 | 0.1686
 Poly R | -4.1417 | 211.8759 | 81.5855 | 0.4638
 
+### Prediction results ###
+![MLR](imgs/mlr_p1.png) ![MLR](imgs/dtr_p1.png)
+![MLR](imgs/rfr_p1.png) ![MLR](imgs/svr_p1.png)
+![MLR](imgs/pr_p1.png)
+
 ### Conclusion ###
 From the above table it is evident that the _Random Forest Regressor_ performed the best out of all other regression models.
