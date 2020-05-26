@@ -1,0 +1,158 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<AqIndex>
+  <Country id="India">
+    <State id="Delhi">
+      <City id="Delhi">
+        <Station id="Alipur, Delhi - DPCC" lastupdate="07-01-2020 06:00:00">
+          <Pollutant_Index Avg="212" Max="302" Min="157" id="PM2.5"/>
+          <Pollutant_Index Avg="112" Max="140" Min="80" id="PM10"/>
+          <Pollutant_Index Avg="36" Max="52" Min="26" id="NO2"/>
+          <Pollutant_Index Avg="6" Max="7" Min="5" id="NH3"/>
+          <Pollutant_Index Avg="11" Max="24" Min="4" id="SO2"/>
+          <Pollutant_Index Avg="51" Max="75" Min="35" id="CO"/>
+          <Pollutant_Index Avg="28" Max="40" Min="1" id="OZONE"/>
+          <Air_Quality_Index Predominant_Parameter="PM2.5" Value="212"/>
+        </Station>
+        <Station id="Aya Nagar, Delhi - IMD" lastupdate="07-01-2020 06:00:00">
+          <Pollutant_Index Avg="189" Max="315" Min="62" id="PM2.5"/>
+          <Pollutant_Index Avg="123" Max="162" Min="74" id="PM10"/>
+          <Pollutant_Index Avg="4" Max="8" Min="2" id="NO2"/>
+          <Pollutant_Index Avg="69" Max="89" Min="64" id="CO"/>
+          <Pollutant_Index Avg="39" Max="45" Min="24" id="OZONE"/>
+          <Air_Quality_Index Predominant_Parameter="PM2.5" Value="189"/>
+        </Station>
+        <Station id="CRRI Mathura Road, Delhi - IMD" lastupdate="07-01-2020 06:00:00">
+          <Pollutant_Index Avg="221" Max="307" Min="128" id="PM2.5"/>
+          <Pollutant_Index Avg="128" Max="166" Min="94" id="PM10"/>
+          <Pollutant_Index Avg="62" Max="81" Min="49" id="NO2"/>
+          <Pollutant_Index Avg="3" Max="5" Min="1" id="CO"/>
+          <Pollutant_Index Avg="12" Max="14" Min="8" id="OZONE"/>
+          <Air_Quality_Index Predominant_Parameter="PM2.5" Value="221"/>
+        </Station>
+        <Station id="DTU, Delhi - CPCB" lastupdate="07-01-2020 06:00:00">
+          <Pollutant_Index Avg="278" Max="341" Min="183" id="PM2.5"/>
+          <Pollutant_Index Avg="143" Max="185" Min="105" id="PM10"/>
+          <Pollutant_Index Avg="28" Max="43" Min="21" id="NO2"/>
+          <Pollutant_Index Avg="5" Max="6" Min="4" id="NH3"/>
+          <Pollutant_Index Avg="6" Max="12" Min="4" id="SO2"/>
+          <Pollutant_Index Avg="73" Max="97" Min="38" id="CO"/>
+          <Pollutant_Index Avg="41" Max="79" Min="10" id="OZONE"/>
+          <Air_Quality_Index Predominant_Parameter="PM2.5" Value="278"/>
+        </Station>
+        <Station id="IGI Airport (T3), Delhi - IMD" lastupdate="07-01-2020 06:00:00">
+          <Pollutant_Index Avg="NA" Max="NA" Min="NA" id="PM2.5"/>
+          <Pollutant_Index Avg="NA" Max="NA" Min="NA" id="PM10"/>
+          <Pollutant_Index Avg="NA" Max="NA" Min="NA" id="NO2"/>
+          <Pollutant_Index Avg="31" Max="66" Min="4" id="CO"/>
+          <Pollutant_Index Avg="16" Max="47" Min="7" id="OZONE"/>
+        </Station>
+        <Station id="IHBAS, Dilshad Garden, Delhi - CPCB" lastupdate="07-01-2020 06:00:00">
+          <Pollutant_Index Avg="193" Max="309" Min="101" id="PM2.5"/>
+          <Pollutant_Index Avg="66" Max="98" Min="44" id="NO2"/>
+          <Pollutant_Index Avg="8" Max="12" Min="6" id="NH3"/>
+          <Pollutant_Index Avg="6" Max="23" Min="2" id="SO2"/>
+          <Pollutant_Index Avg="53" Max="70" Min="24" id="CO"/>
+          <Air_Quality_Index Predominant_Parameter="PM2.5" Value="193"/>
+        </Station>
+        <Station id="ITO, Delhi - CPCB" lastupdate="07-01-2020 06:00:00">
+          <Pollutant_Index Avg="258" Max="333" Min="150" id="PM2.5"/>
+          <Pollutant_Index Avg="127" Max="166" Min="92" id="PM10"/>
+          <Pollutant_Index Avg="62" Max="76" Min="50" id="NO2"/>
+          <Pollutant_Index Avg="3" Max="4" Min="3" id="NH3"/>
+          <Pollutant_Index Avg="7" Max="14" Min="2" id="SO2"/>
+          <Pollutant_Index Avg="96" Max="102" Min="46" id="CO"/>
+          <Pollutant_Index Avg="8" Max="9" Min="7" id="OZONE"/>
+          <Air_Quality_Index Predominant_Parameter="PM2.5" Value="258"/>
+        </Station>
+        <Station id="Jawaharlal Nehru Stadium, Delhi - DPCC" lastupdate="07-01-2020 06:00:00">
+          <Pollutant_Index Avg="238" Max="325" Min="130" id="PM2.5"/>
+          <Pollutant_Index Avg="138" Max="189" Min="92" id="PM10"/>
+          <Pollutant_Index Avg="95" Max="115" Min="68" id="NO2"/>
+          <Pollutant_Index Avg="13" Max="17" Min="11" id="NH3"/>
+          <Pollutant_Index Avg="25" Max="39" Min="17" id="SO2"/>
+          <Pollutant_Index Avg="51" Max="75" Min="25" id="CO"/>
+          <Pollutant_Index Avg="9" Max="196" Min="2" id="OZONE"/>
+          <Air_Quality_Index Predominant_Parameter="PM2.5" Value="238"/>
+        </Station>
+        <Station id="Lodhi Road, Delhi - IMD" lastupdate="07-01-2020 06:00:00">
+          <Pollutant_Index Avg="217" Max="336" Min="94" id="PM2.5"/>
+          <Pollutant_Index Avg="140" Max="314" Min="67" id="PM10"/>
+          <Pollutant_Index Avg="34" Max="41" Min="27" id="NO2"/>
+          <Pollutant_Index Avg="84" Max="100" Min="70" id="CO"/>
+          <Pollutant_Index Avg="17" Max="26" Min="12" id="OZONE"/>
+          <Air_Quality_Index Predominant_Parameter="PM2.5" Value="217"/>
+        </Station>
+        <Station id="Mandir Marg, Delhi - DPCC" lastupdate="07-01-2020 06:00:00">
+          <Pollutant_Index Avg="NA" Max="NA" Min="NA" id="PM2.5"/>
+          <Pollutant_Index Avg="NA" Max="NA" Min="NA" id="PM10"/>
+          <Pollutant_Index Avg="NA" Max="NA" Min="NA" id="NO2"/>
+          <Pollutant_Index Avg="NA" Max="NA" Min="NA" id="NH3"/>
+          <Pollutant_Index Avg="NA" Max="NA" Min="NA" id="SO2"/>
+          <Pollutant_Index Avg="96" Max="107" Min="78" id="CO"/>
+          <Pollutant_Index Avg="4" Max="9" Min="2" id="OZONE"/>
+        </Station>
+        <Station id="NSIT Dwarka, Delhi - CPCB" lastupdate="07-01-2020 06:00:00">
+          <Pollutant_Index Avg="256" Max="307" Min="165" id="PM2.5"/>
+          <Pollutant_Index Avg="52" Max="61" Min="41" id="NO2"/>
+          <Pollutant_Index Avg="14" Max="20" Min="7" id="SO2"/>
+          <Pollutant_Index Avg="46" Max="108" Min="6" id="CO"/>
+          <Pollutant_Index Avg="9" Max="60" Min="1" id="OZONE"/>
+          <Air_Quality_Index Predominant_Parameter="PM2.5" Value="256"/>
+        </Station>
+        <Station id="North Campus, DU, Delhi - IMD" lastupdate="07-01-2020 06:00:00">
+          <Pollutant_Index Avg="NA" Max="NA" Min="NA" id="PM2.5"/>
+          <Pollutant_Index Avg="NA" Max="NA" Min="NA" id="PM10"/>
+          <Pollutant_Index Avg="NA" Max="NA" Min="NA" id="NO2"/>
+          <Pollutant_Index Avg="64" Max="69" Min="43" id="CO"/>
+          <Pollutant_Index Avg="21" Max="176" Min="4" id="OZONE"/>
+        </Station>
+        <Station id="Punjabi Bagh, Delhi - DPCC" lastupdate="07-01-2020 06:00:00">
+          <Pollutant_Index Avg="266" Max="345" Min="163" id="PM2.5"/>
+          <Pollutant_Index Avg="151" Max="246" Min="112" id="PM10"/>
+          <Pollutant_Index Avg="74" Max="111" Min="46" id="NO2"/>
+          <Pollutant_Index Avg="10" Max="11" Min="7" id="NH3"/>
+          <Pollutant_Index Avg="23" Max="30" Min="16" id="SO2"/>
+          <Pollutant_Index Avg="89" Max="105" Min="40" id="CO"/>
+          <Pollutant_Index Avg="7" Max="15" Min="6" id="OZONE"/>
+          <Air_Quality_Index Predominant_Parameter="PM2.5" Value="266"/>
+        </Station>
+        <Station id="Pusa, Delhi - IMD" lastupdate="07-01-2020 06:00:00">
+          <Pollutant_Index Avg="177" Max="270" Min="82" id="PM2.5"/>
+          <Pollutant_Index Avg="123" Max="178" Min="76" id="PM10"/>
+          <Pollutant_Index Avg="56" Max="86" Min="41" id="NO2"/>
+          <Pollutant_Index Avg="44" Max="48" Min="34" id="CO"/>
+          <Pollutant_Index Avg="17" Max="29" Min="13" id="OZONE"/>
+          <Air_Quality_Index Predominant_Parameter="PM2.5" Value="177"/>
+        </Station>
+        <Station id="R K Puram, Delhi - DPCC" lastupdate="07-01-2020 06:00:00">
+          <Pollutant_Index Avg="141" Max="237" Min="83" id="PM2.5"/>
+          <Pollutant_Index Avg="130" Max="167" Min="89" id="PM10"/>
+          <Pollutant_Index Avg="66" Max="85" Min="48" id="NO2"/>
+          <Pollutant_Index Avg="5" Max="6" Min="4" id="NH3"/>
+          <Pollutant_Index Avg="16" Max="21" Min="10" id="SO2"/>
+          <Pollutant_Index Avg="34" Max="68" Min="10" id="CO"/>
+          <Pollutant_Index Avg="19" Max="49" Min="15" id="OZONE"/>
+          <Air_Quality_Index Predominant_Parameter="PM2.5" Value="141"/>
+        </Station>
+        <Station id="Shadipur, Delhi - CPCB" lastupdate="07-01-2020 06:00:00">
+          <Pollutant_Index Avg="306" Max="370" Min="145" id="PM2.5"/>
+          <Pollutant_Index Avg="105" Max="136" Min="80" id="NO2"/>
+          <Pollutant_Index Avg="17" Max="32" Min="1" id="SO2"/>
+          <Pollutant_Index Avg="74" Max="96" Min="27" id="CO"/>
+          <Pollutant_Index Avg="11" Max="31" Min="1" id="OZONE"/>
+          <Air_Quality_Index Predominant_Parameter="PM2.5" Value="306"/>
+        </Station>
+        <Station id="Sirifort, Delhi - CPCB" lastupdate="07-01-2020 06:00:00">
+          <Pollutant_Index Avg="241" Max="333" Min="134" id="PM2.5"/>
+          <Pollutant_Index Avg="165" Max="246" Min="93" id="PM10"/>
+          <Pollutant_Index Avg="54" Max="71" Min="31" id="NO2"/>
+          <Pollutant_Index Avg="6" Max="8" Min="4" id="NH3"/>
+          <Pollutant_Index Avg="6" Max="11" Min="1" id="SO2"/>
+          <Pollutant_Index Avg="44" Max="79" Min="12" id="CO"/>
+          <Pollutant_Index Avg="19" Max="48" Min="15" id="OZONE"/>
+          <Air_Quality_Index Predominant_Parameter="PM2.5" Value="241"/>
+        </Station>
+      </City>
+    </State>
+  </Country>
+</AqIndex>
