@@ -74,13 +74,12 @@ from sklearn.preprocessing import StandardScaler
 sc_x = StandardScaler()
 sc_y = StandardScaler()
 x_train_svr = sc_x.fit_transform(x_train)
-y_train_svr = sc_y.fit_transform(y_train)
+y_train_svr = sc_y.fit_transform(y_train.reshape(-1, 1)).ravel()
 
-svr_reg = SVR()
+svr_reg = SVR(kernel='rbf')
 svr_reg.fit(x_train_svr,y_train_svr)
 
-svr_y_predict = sc_y.inverse_transform(svr_reg.predict(sc_x.transform(x_test)))
-
+svr_y_predict = sc_y.inverse_transform(svr_reg.predict(sc_x.transform(x_test)).reshape(1,-1))
 
 #----------------------------------------------
 # error estimation methods
@@ -124,10 +123,10 @@ r2_rt = metrics.r2_score(y_test,rt_y_predict)
 rmsle_rt = rmsle(y_test,rt_y_predict)
 
 #----- support vextor regression --------
-rmse_svr = sqrt(metrics.mean_squared_error(y_test, svr_y_predict))
-mae_svr = metrics.mean_absolute_error(y_test, svr_y_predict)
-r2_svr = metrics.r2_score(y_test,svr_y_predict)
-rmsle_svr = rmsle(y_test,svr_y_predict)
+rmse_svr = sqrt(metrics.mean_squared_error(y_test, svr_y_predict.T))
+mae_svr = metrics.mean_absolute_error(y_test, svr_y_predict.T)
+r2_svr = metrics.r2_score(y_test,svr_y_predict.T)
+rmsle_svr = rmsle(y_test,svr_y_predict.T)
 
 '''
 from sklearn.model_selection import cross_val_score
@@ -168,24 +167,27 @@ rf_ytp_r2 = metrics.r2_score(y_train, rt_reg.predict(x_train))
 rf_ytp_rmsle = rmsle(y_train, rt_reg.predict(x_train))
 
 # ----- svr -----
-svr_ytp_rmse = sqrt(metrics.mean_squared_error(y_train,sc_y.inverse_transform(svr_reg.predict(sc_x.transform(x_train)))))
-svr_ytp_mae = metrics.mean_absolute_error(y_train,sc_y.inverse_transform(svr_reg.predict(sc_x.transform(x_train))))
-svr_ytp_r2 = metrics.r2_score(y_train,sc_y.inverse_transform(svr_reg.predict(sc_x.transform(x_train))))
-svr_ytp_rmsle = rmsle(y_train,sc_y.inverse_transform(svr_reg.predict(sc_x.transform(x_train))))
+svr_ytp_rmse = sqrt(metrics.mean_squared_error(y_train, sc_y.inverse_transform(svr_reg.predict(sc_x.transform(x_train)).reshape(1,-1)).T)) 
+svr_ytp_mae = metrics.mean_absolute_error(y_train, sc_y.inverse_transform(svr_reg.predict(sc_x.transform(x_train)).reshape(1,-1)).T)  
+svr_ytp_r2 = metrics.r2_score(y_train, sc_y.inverse_transform(svr_reg.predict(sc_x.transform(x_train)).reshape(1,-1)).T) 
+svr_ytp_rmsle = rmsle(y_train, sc_y.inverse_transform(svr_reg.predict(sc_x.transform(x_train)).reshape(1,-1)).T)  
 
 # ==========================================
 # =========== RESULT =======================
 # ==========================================
 
+print("")
 print("evaluating on training data:")
+print("---------------------------------")
 print("models\tR^2\tRMSE\tMAE\tRMSLE")
 print("MLR\t{0:.4f}\t{1:.4f}\t{2:.4f}\t{3:.4f}".format(mlr_ytp_r2,mlr_ytp_rmse,mlr_ytp_mae,mlr_ytp_rmsle))
 print("PR\t{0:.2f}\t{1:.2f}\t{2:.3f}\t{3:.4f}".format(pr_ytp_r2,pr_ytp_rmse,pr_ytp_mae,pr_ytp_rmsle))
 print("DTR\t{0:.4f}\t{1:.4f}\t{2:.4f}\t{3:.4f}".format(dt_ytp_r2,dt_ytp_rmse,dt_ytp_mae,dt_ytp_rmsle))
 print("RFR\t{0:.4f}\t{1:.4f}\t{2:.4f}\t{3:.4f}".format(rf_ytp_r2,rf_ytp_rmse,rf_ytp_mae,rf_ytp_rmsle))
 print("SVR\t{0:.4f}\t{1:.3f}\t{2:.3f}\t{3:.4f}".format(svr_ytp_r2,svr_ytp_rmse,svr_ytp_mae,svr_ytp_rmsle))
-
+print("")
 print("evaluating on testing data:")
+print("---------------------------------")
 print("models\tR^2\tRMSE\tMAE\tRMSLE")
 print("MLR\t{0:.4f}\t{1:.4f}\t{2:.4f}\t{3:.4f}".format(r2_mlr,rmse_mlr,mae_mlr,rmsle_mlr))
 print("PR\t{0:.2f}\t{1:.2f}\t{2:.3f}\t{3:.4f}".format(r2_pr,rmse_pr,mae_pr,rmsle_pr))
